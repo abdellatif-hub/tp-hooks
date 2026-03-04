@@ -41,7 +41,8 @@ L'application affiche le titre **Ma bibliothèque en React** et le livre sélect
 
 L'utilisateur peut sélectionner un livre grâce aux boutons.
 
-![Interface principale](public/images/1.png)
+<img width="2559" height="1346" alt="6" src="https://github.com/user-attachments/assets/e5a10d6d-ced5-484b-ae29-74016264f1a6" />
+
 
 ---
 
@@ -51,25 +52,19 @@ Lorsque l'utilisateur clique sur **Livre 2**, le livre sélectionné devient **L
 
 Le titre de l'onglet du navigateur se met à jour automatiquement grâce au hook `useEffect`.
 
-![Les Misérables](public/images/2.png)
+<img width="2559" height="1343" alt="7" src="https://github.com/user-attachments/assets/cc05a974-f373-4b57-92d7-158931a51ad4" />
+
 
 ---
 
-## 3️⃣ Sélection du livre *Le Petit Prince*
 
-Lorsque l'utilisateur clique sur **Livre 1**, le livre sélectionné devient **Le Petit Prince**.
-
-L'application met à jour l'interface dynamiquement.
-
-![Le Petit Prince](public/images/3.png)
-
----
 
 ## 4️⃣ Sélection du livre *Clean Code*
 
 En cliquant sur **Livre 3**, l'application affiche le livre **Clean Code**.
 
-![Clean Code](public/images/4.png)
+<img width="2559" height="1343" alt="8" src="https://github.com/user-attachments/assets/8abaf9f8-f80e-457e-9390-1abe29b7f9fd" />
+
 
 ---
 
@@ -82,7 +77,8 @@ On peut voir :
 - le dossier `components`
 - les fichiers React du projet.
 
-![Structure du projet](public/images/5.png)
+<img width="1970" height="1296" alt="1" src="https://github.com/user-attachments/assets/3400d721-e584-48cf-86f7-fbe12174debb" />
+
 
 ---
 
