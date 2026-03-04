@@ -1,75 +1,100 @@
-﻿# Mini Bibliothèque React
+# 📚 Mini Bibliothèque React
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-7.3.1-646CFF?logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Statut-En%20cours-22c55e" alt="Statut" />
+  <img src="https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-7.3.1-646CFF?logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Statut-En%20cours-22c55e" />
 </p>
 
-## Aperçu
-Mini projet React qui simule une petite bibliothèque interactive.
-L'utilisateur sélectionne un livre, le titre de l'onglet navigateur se met à jour, puis peut ajouter des likes au livre affiché.
+---
 
-## Fonctionnalités
-- Sélection d'un livre parmi 3 titres.
-- Mise à jour dynamique du document title avec `useEffect`.
-- Compteur de likes local avec `useState`.
-- Composant réutilisable `BookLike`.
+# 📖 Aperçu
+Mini projet **React** qui simule une petite bibliothèque interactive.
 
-## Captures d'écran
+L'utilisateur peut :
+- choisir un livre
+- voir les informations du livre
+- ajouter des likes
+- voir le **titre du navigateur changer automatiquement**
 
-<table>
-  <tr>
-    <td><img src="public/images/1.png" alt="Capture 1" /></td>
-    <td><img src="public/images/2.png" alt="Capture 2" /></td>
-    <td><img src="public/images/3.png" alt="Capture 3" /></td>
-    <td><img src="public/images/4.png" alt="Capture 4" /></td>
-  </tr>
-  <tr>
-    <td><img src="public/images/5.png" alt="Capture 5" /></td>
-    <td><img src="public/images/6.png" alt="Capture 6" /></td>
-    <td><img src="public/images/7.png" alt="Capture 7" /></td>
-    <td><img src="public/images/8.png" alt="Capture 8" /></td>
-  </tr>
-</table>
+Ce projet permet de pratiquer les **React Hooks (`useState`, `useEffect`)**.
 
-## Stack technique
-- React 19
-- Vite 7
-- JavaScript (ES Modules)
-- ESLint
+---
 
-## Installation et lancement
-```bash
-npm install
-npm run dev
-```
+# ⚙️ Fonctionnalités
 
-## Scripts disponibles
-- `npm run dev` : lance le serveur de développement.
-- `npm run build` : génère le build de production.
-- `npm run preview` : prévisualise le build localement.
-- `npm run lint` : exécute ESLint.
+✅ Sélection d'un livre parmi 3 titres  
+✅ Mise à jour dynamique du **titre du navigateur**  
+✅ Compteur de **likes**  
+✅ Composant réutilisable **BookLike**  
+✅ Interface simple et claire  
 
-## Structure du projet
-```text
-mini-bibliotheque-react/
-  public/
-    images/
-      1.png ... 8.png
-  src/
-    components/
-      BookLike.jsx
-    App.jsx
-    App.css
-    index.css
-    main.jsx
-```
+---
 
-## Concepts React utilisés
-- `useState` : gestion de l'état local (`livre`, `likes`).
-- `useEffect` : effet de bord pour synchroniser le titre de la page.
-- Props : passage des données de `App` vers `BookLike`.
+# 🖼️ Captures d'écran
 
-## Auteur
-Projet réalisé par **Abdela**.
+---
+
+## 1️⃣ Interface principale
+
+L'application affiche le titre **Ma bibliothèque en React** et le livre sélectionné.
+
+L'utilisateur peut sélectionner un livre grâce aux boutons.
+
+![Interface principale](public/images/1.png)
+
+---
+
+## 2️⃣ Sélection du livre *Les Misérables*
+
+Lorsque l'utilisateur clique sur **Livre 2**, le livre sélectionné devient **Les Misérables**.
+
+Le titre de l'onglet du navigateur se met à jour automatiquement grâce au hook `useEffect`.
+
+![Les Misérables](public/images/2.png)
+
+---
+
+## 3️⃣ Sélection du livre *Le Petit Prince*
+
+Lorsque l'utilisateur clique sur **Livre 1**, le livre sélectionné devient **Le Petit Prince**.
+
+L'application met à jour l'interface dynamiquement.
+
+![Le Petit Prince](public/images/3.png)
+
+---
+
+## 4️⃣ Sélection du livre *Clean Code*
+
+En cliquant sur **Livre 3**, l'application affiche le livre **Clean Code**.
+
+![Clean Code](public/images/4.png)
+
+---
+
+## 5️⃣ Structure du projet
+
+Cette capture montre l'organisation du projet dans **VS Code**.
+
+On peut voir :
+- le dossier `src`
+- le dossier `components`
+- les fichiers React du projet.
+
+![Structure du projet](public/images/5.png)
+
+---
+
+## 6️⃣ Fichier `main.jsx`
+
+Ce fichier est le **point d'entrée de l'application React**.
+
+Il permet de monter le composant `App` dans l'élément `root` du fichier HTML.
+
+```javascript
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
