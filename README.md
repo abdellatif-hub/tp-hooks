@@ -31,7 +31,54 @@ Ce projet permet de pratiquer les **React Hooks (`useState`, `useEffect`)**.
 
 ---
 
-# 🖼️ Captures d'écran
+## 📂 Structure des fichiers
+
+### 📄 main.jsx
+Ce fichier est le **point d'entrée de l'application React**.  
+Il utilise `createRoot` pour afficher le composant principal `App` dans l'élément HTML ayant l'id `root`.  
+Il utilise aussi `StrictMode` pour activer les vérifications supplémentaires pendant le développement.
+
+<img width="2559" height="1280" alt="5" src="https://github.com/user-attachments/assets/bb7fd629-7039-4625-9772-42efefa1c7aa" />
+
+---
+
+### 📄 index.css
+Ce fichier contient **les styles globaux de l'application**.  
+Il définit :
+- la police du site
+- la couleur de fond
+- le style du conteneur principal
+- le design des cartes et des boutons.
+
+  <img width="2559" height="1268" alt="4" src="https://github.com/user-attachments/assets/b1ab2dae-4796-410d-9465-a04a58ef709b" />
+
+
+---
+
+### 📄 App.jsx
+Ce fichier contient le **composant principal de l'application**.
+
+Il permet de :
+- gérer le livre sélectionné avec `useState`
+- modifier le titre de la page avec `useEffect`
+- afficher les boutons pour choisir un livre
+- envoyer les informations du livre au composant `BookLike`.
+  <img width="2559" height="1266" alt="3" src="https://github.com/user-attachments/assets/3c71373c-9cd1-4865-9553-8f0ce9230de3" />
+
+
+---
+
+### 📄 BookLike.jsx
+Ce composant affiche **les informations d'un livre**.
+
+Il reçoit les données grâce aux **props** :
+- `titre`
+- `auteur`
+
+Il utilise `useState` pour gérer un **compteur de likes**.  
+Chaque clic sur le bouton **Aimer** augmente le nombre de likes.
+<img width="2559" height="1245" alt="2" src="https://github.com/user-attachments/assets/ed8dd394-2cc9-4f20-876f-d3847e4493c9" />
+
 
 ---
 
