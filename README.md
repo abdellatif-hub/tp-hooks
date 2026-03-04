@@ -127,17 +127,3 @@ On peut voir :
 <img width="1970" height="1296" alt="1" src="https://github.com/user-attachments/assets/3400d721-e584-48cf-86f7-fbe12174debb" />
 
 
----
-
-## 6️⃣ Fichier `main.jsx`
-
-Ce fichier est le **point d'entrée de l'application React**.
-
-Il permet de monter le composant `App` dans l'élément `root` du fichier HTML.
-
-```javascript
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
